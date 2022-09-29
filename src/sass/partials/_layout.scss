@@ -1,17 +1,87 @@
+@import 'variables';
 
-.home-page {
+.splash {
   width: 100%;
-  height: auto;  
-  display: flex;
-  justify-content: space-between;
-  background-image: url('../images/background.png');  
+  height: 100vh;
+  background-image: url('../images/background.png');
+  background: linear-gradient( rgba(0,0,0,0.5), rgba(0, 0, 0, 0.5) ),url("/images/background.png");
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
+.logo {
+  float: left;
+  text-align: left;
+  margin-left: 20%;
+  margin-top: 2%;
+  letter-spacing: 5px;
+  line-height: 5px;
+}
+
+.logo h3 {
+  color: $color-two;
+  font-family: $font-one;
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.logo h5 {
+  font-size: 10px;
+  font-family: $font-one;
+  font-weight: 400;
+  color: $color-two;
+}
+
+.navigation{
+  word-spacing: 10px;
+ ul {
+  padding-top: 50px;
+ } 
+ li {
+  display: inline;
+  font-size: 12px;
+  letter-spacing: 1px;
+  a {
+    text-decoration: none;
+    font-family: $font-one;
+    color: $color-two;
+  }
+ }
 }
 
 .title {
-    margin: 20px;
-    font-family: $color-two;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 20px;
+  h1 {
+    color: $color-one;
+    font-family: $font-four;
+    font-size: 50px;
+    letter-spacing: 8px;
+    font-weight: 750;
+    text-align: left;
+  }
+  h1.right {
+    padding-left: 100px;
+  }
+  h2 {
+    color: $color-one;
+    font-family: $font-four;
+    font-size: 50px;
+  }
 }
 
-
-
+.btn-one{
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-80%, -50%);
+  text-decoration: none;
+  font-family: $font-two;
+  color: $color-two;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
