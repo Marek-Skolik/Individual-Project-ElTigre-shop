@@ -19,7 +19,7 @@ export const settings = {
     description: '.descrtiption',
     roasting: '.roasting',
     intensity: '.intensity',
-    image: 'img[src="image"]',
+    image: '.image',
   }
 };
 

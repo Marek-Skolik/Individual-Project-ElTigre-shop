@@ -1,4 +1,4 @@
-import { settings } from './settings.js';
+import { settings, } from '../settings.js';
 const app = {
   initData: function() {
     const url = settings.db.url + '/' + settings.db.products;
@@ -10,14 +10,6 @@ const app = {
       .then((parsedResponse) => {
         this.data.products = parsedResponse;
       });
-  },
-
-  initMenu: function () {
-    const thisApp = this;
-
-    for (let productData of thisApp.data.products) {
-      new Product(productData.id, productData);
-    }
   },
 
   init: function() {
