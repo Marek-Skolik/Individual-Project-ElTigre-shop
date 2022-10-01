@@ -3,7 +3,7 @@ export const select = {
     menuProduct: '#template-menu-product',
   },
   containerOf: {
-    menu: '#product-list',
+    menu: '#products',
     pages: '#pages',
   },
   nav: {
@@ -15,6 +15,11 @@ export const settings = {
   db: {
     url: '//' + window.location.hostname + (window.location.hostname=='localhost' ? ':3131' : ''),
     products: 'products',
+    name: '.name',
+    description: '.descrtiption',
+    roasting: '.roasting',
+    intensity: '.intensity',
+    image: 'img[src="image"]',
   }
 };
 
@@ -23,5 +28,5 @@ export const classNames = {
 };
 
 export const templates = {
-  menuProduct: Handlebars.compile(document.querySelector(select.templateOf.menuProduct).innerHTML),
+ 
 };

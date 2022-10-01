@@ -12,6 +12,14 @@ const app = {
       });
   },
 
+  initMenu: function () {
+    const thisApp = this;
+
+    for (let productData of thisApp.data.products) {
+      new Product(productData.id, productData);
+    }
+  },
+
   init: function() {
     const thisApp = this;
     thisApp.initData();
