@@ -8,103 +8,102 @@
     <link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;0,900;1,600&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;0,900;1,600&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <header class="splash">
         <div class="container">
-            <nav class="nav">
+            <div class="nav">
                 <div class="logo">
                     <h3>EL TIGRE</h3>
                     <h5>VENEZUELA COFFE BEANS</h5>
                 </div>
-                <div class="navigation">
+                <nav class="navigation">
                     <ul>
                         <li><a href="#">HOME</a></li>
                         <li><a href="#">PRODUCTS</a></li>
                         <li><a href="#">CONTACT</a></li>
                     </ul>
-                </div>
-                </div>
-            </nav>
+                </nav>
+            </div>
             <div class="title">
                 <h1>HOME OF</h1>
                 <h1 class="right">ORIGINAL TASTES</h1>
                 <h2>_____</h2>
             </div>
             <a href="#" class="btn btn-one">DISCOVER</a>
-            <h1><i class="fa fa-costam"><i>Teskte</h1>
+            <i class="icon-arrow-down"></i>
         </div>
     </header>
-
     <div id="pages">
-        <section id="home" class="active">
-          <div class="home-wrapper container"></div>
+        <section id="home">
+            <div class="home-wrapper container"></div>
         </section>
         <section id="products">
-          <div id="product-list" class="product-list container"></div>
+            <div id="product-list" class="product-list container"></div>
         </section>
         <section id="contact">
-          <div class="booking-wrapper container"></div>
+            <div class="booking-wrapper container"></div>
         </section>
     </div>
 
-    <section class="products">
-        <div class="title-prod">
-            <h2>PRODUCTS</h2>
-            <h2>_____</h2>
-        </div>
-        <div class="box-1">
-            <div class="prod-1">
-                <h3>01. LA LAGARTIJA</h3>
-                <h3>___</h3>
+    <script id="template-menu-product" type="text/x-handlebars-template">
+        <article class="product-header">
+            <h1 class="title-prod">PRODUCTS</h1>
+            <div class="products">
+                <div id="product-1" class="box-1">
+                    <div class="title">{{name}}</div>
+                    <div class="description">{{description}}</div>
+                    <div class="roasting">
+                        <p>ROASTING: {{roasting}}</p>
+                    </div>
+                    <div class="intensity">
+                        <p>INTENSITY: {{intensity}}</p>
+                    </div>
+                </div>
+                <div id="product-2" class="box-2">
+                    <div class="title">{{name}}</div>
+                    <div class="description">{{description}}</div>
+                    <div class="roasting">
+                        <p>ROASTING: {{roasting}}</p>
+                    </div>
+                    <div class="intensity">
+                        <p>INTENSITY: {{intensity}}</p>
+                    </div>
+                </div>
+                <div id="product-3" class="box-3">
+                    <div class="title">{{name}}</div>
+                    <div class="description">{{description}}</div>
+                    <div class="roasting">
+                        <p>ROASTING: {{roasting}}</p>
+                    </div>
+                    <div class="intensity">
+                        <p>INTENSITY: {{intensity}}</p>
+                    </div>
+                </div>
+            </div>>
+        </article>
+    </script>
+
+    <section class="about">
+        <div class="about-us">
+            <div class="container">
+                <h1>ABOUT US</h1>
+                <p><i>Who are we? Just a bunch of friends with<br>
+                        a love for a good coffe and desire to create<br> something new, something original.</i></p>
+                <p><i>Our coffees reflect us - young, wild and free.<br>We are on the journey of new tastes...</i></p>
+                <p class="join"><i>Join us!</i></p>
             </div>
-            <div class="description">
-                <p>Mysterious and treacherous... The best choice for<br>
-                the start of your journey! It will provide you a rich<br>
-                delicious flavor.</p>
-            </div>
-            <div class="information">
-                <p>ROASTING:<span>5/10</span></p>
-                <p>INTENSITY:<span>6/10</span></p>
-            </div>
-            <img src="../images/coffee-1.png" alt="coffe-1">
-        </div>
-        <div class="box-2">
-            <div class="prod-1">
-                <h3>01. EL TIGRE</h3>
-                <h3>___</h3>
-            </div>
-            <div class="description">
-                <p>Mysterious and treacherous... The best choice for<br>
-                the start of your journey! It will provide you a rich<br>
-                delicious flavor.</p>
-            </div>
-            <div class="information">
-                <p>ROASTING:<span>8/10</span></p>
-                <p>INTENSITY:<span>9/10</span></p>
-            </div>
-            <img src="../images/coffee-2.png" alt="coffe-2">
-        </div>
-        <div class="box-3">
-            <div class="prod-1">
-                <h3>01. LA CUCARACHA</h3>
-                <h3>___</h3>
-            </div>
-            <div class="description">
-                <p>Mysterious and treacherous... The best choice for<br>
-                the start of your journey! It will provide you a rich<br>
-                delicious flavor.</p>
-            </div>
-            <div class="information">
-                <p>ROASTING:<span>3/10</span></p>
-                <p>INTENSITY:<span>7/10</span></p>
-            </div>
-            <img src="../images/coffee-3.png" alt="coffe-3">
         </div>
     </section>
+    <footer>
+        <p>© 2021 EL TIGRE inc.</p>
+    </footer>
     <script src="js/app.js" type="module"></script>
 </body>
+
 </html>
