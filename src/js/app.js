@@ -1,15 +1,41 @@
-import { settings, } from '../settings.js';
+import { settings } from './settings.js';
+import Product from './components/Products.js';
 
 const app = {
-  initData: function() {
+
+  initMenu: function () {
+    const thisApp = this;
+
+    //console.log('thisApp.data', thisApp.data);
+    for (let productData of thisApp.data.products) {
+      new Product(productData.id, productData);
+    }
+  },
+
+  initProduct: function (){
+    const thisApp = this;
+
+    thisApp.widgetContainer = document.querySelector(select.containerOf.pages);
+    thisApp.pages = new Home(thisApp.widgetContainer);
+  },
+
+  initData: function () {
+    const thisApp = this;
+
+    thisApp.data = {};
+
     const url = settings.db.url + '/' + settings.db.products;
-    this.data = {};
+
     fetch(url)
-      .then((rawResponse) => {
+      .then(function (rawResponse) {
         return rawResponse.json();
       })
-      .then((parsedResponse) => {
-        this.data.products = parsedResponse;
+      .then(function (parsedResponse) {
+        // save parsedResponse at thisApp.data.products
+        thisApp.data.products = parsedResponse;
+        console.log('PARSEDRESPONSE:', parsedResponse);
+        // execute initMenu method
+        app.initMenu();
       });
   },
 
@@ -17,6 +43,7 @@ const app = {
   init: function() {
     const thisApp = this;
     thisApp.initData();
+    thisApp.initProduct;
   },
 };
 

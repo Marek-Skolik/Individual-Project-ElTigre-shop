@@ -1,19 +1,27 @@
-import {templates} from '../settings.js';
+import {select, templates} from '../settings.js';
+import utils from '../utils.js';
 
 class Product {
-    constructor (element){
-        const thisProduct = this;
+  constructor (id, data){
+    const thisProduct = this;
 
-        thisProduct.render(element);
-    }
+    thisProduct.id = id;
+    thisProduct.data = data;
+  }
 
-    render(element){
-        const thisProduct = this;
-        const generatedHTML = templates.productList();
-        thisProduct.dom = {};
-        thisProduct.dom.wrapper = element;
-        thisProduct.dom.wrapper.innerHTML = generatedHTML;
-    }
+  renderInMenu(){
+    const thisProduct = this;
+    const generatedHTML = templates.menuProduct(thisProduct.data);
+    
+    const elementOne = utils.createDOMFromHTML(generatedHTML);
+    const elementTwo = utils.createDOMFromHTML(generatedHTML);
+   
+    const menuContainerHomePage = document.querySelector(select.containerOf.menu);
+    const menuContainerProductsPage = document.querySelector(select.containerOf.menu);
+
+    menuContainerHomePage.appendChild(elementOne);
+    menuContainerProductsPage.appendChild(elementTwo);
+  }
 }
 console.log(Product);
 

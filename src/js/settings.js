@@ -1,6 +1,7 @@
 export const select = {
   templateOf: {
-    menuProduct: '#template-products',
+    menuProduct: '#template-product',
+    product: '#product',
   },
   containerOf: {
     menu: '#product-list',
@@ -13,7 +14,7 @@ export const select = {
 
 export const settings = {
   db: {
-    url: '//' + window.location.hostname + (window.location.hostname=='localhost' ? ':3131' : ''),
+    url: '//localhost:3131',
     products: 'products',
     name: '.name',
     description: '.descrtiption',
@@ -30,5 +31,5 @@ export const classNames = {
 };
 
 export const templates = {
-  product: Handlebars.compile(document.querySelector(select.templateOf.productList).innerHTML),
+  menuProduct: Handlebars.compile(document.querySelector(select.templateOf.menuProduct).innerHTML),
 };
