@@ -24,9 +24,9 @@
                 </div>
                 <nav class="navigation">
                     <ul>
-                        <li><a href="#">HOME</a></li>
-                        <li><a href="#">PRODUCTS</a></li>
-                        <li><a href="#">CONTACT</a></li>
+                        <li><a href="#home">HOME</a></li>
+                        <li><a href="#products">PRODUCTS</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
                     </ul>
                 </nav>
             </div>
@@ -51,45 +51,6 @@
         </section>
     </div>
 
-    <script id="template-menu-product" type="text/x-handlebars-template">
-        <article class="product-header">
-            <h1 class="title-prod">PRODUCTS</h1>
-            <div class="#products">
-                <div id="product-1" class="box-1">
-                    <div class="name">{{name}}</div>
-                    <div class="description">{{description}}</div>
-                    <div class="roasting">
-                        <p>ROASTING: {{roasting}}</p>
-                    </div>
-                    <div class="intensity">
-                        <p>INTENSITY: {{intensity}}</p>
-                    </div>
-                </div>
-                <div id="product-2" class="box-2">
-                    <div class="name">{{name}}</div>
-                    <div class="description">{{description}}</div>
-                    <div class="roasting">
-                        <p>ROASTING: {{roasting}}</p>
-                    </div>
-                    <div class="intensity">
-                        <p>INTENSITY: {{intensity}}</p>
-                    </div>
-                </div>
-                <div id="product-3" class="box-3">
-                    <div class="name">{{name}}</div>
-                    <div class="description">{{description}}</div>
-                    <div class="roasting">
-                        <p>ROASTING: {{roasting}}</p>
-                    </div>
-                    <div class="intensity">
-                        <p>INTENSITY: {{intensity}}</p>
-                    </div>
-                    <img src="image">
-                </div>
-            </div>>
-        </article>
-    </script>
-
     <section class="about">
         <div class="about-us">
             <div class="container">
@@ -104,6 +65,54 @@
     <footer>
         <p>© 2021 EL TIGRE inc.</p>
     </footer>
+
+    <script id="template-product" type="text/x-handlebars-template">
+        <article class='product'>
+            <div class="section-title">
+                <h1>PRODUCTS</h1>
+            </div>
+            <div id="product-1" class="container-1">
+                <h3>{{name}}</h3>
+                <div class="description">
+                    <p>{{description}}</p>
+                </div>
+                <div class='characteristic'>
+                    <p class='roasting'>Roasting: <span>{{roasting}}</span></p>
+                    <p class='intensity'>Intensity: <span>{{intensity}}</span></p>
+                </div>    
+                <div class="image">
+                    <img src="url(../images/coffe-1.png)" alt="picture">
+                </div>
+            </div>
+            <div id="product-2" class="container-2 left">
+                <h3>{{name}}</h3>
+                <div class="description">
+                    <p>{{description}}</p>
+                </div>
+                <div class='characteristic'>
+                    <p class='roasting'>Roasting: <span>{{roasting}}</span></p>
+                    <p class='intensity'>Intensity: <span>{{intensity}}</span></p>
+                </div>    
+                <div class="image">
+                    <img src="url(../images/coffe-2.png)" alt="picture">
+                </div>
+            </div>
+            <div id="product-3" class="container-3">
+                <h3>{{name}}</h3>
+                <div class="description">
+                    <p>{{description}}</p>
+                </div>
+                <div class='characteristic'>
+                    <p class='roasting'>Roasting: <span>{{roasting}}</span></p>
+                    <p class='intensity'>Intensity: <span>{{intensity}}</span></p>
+                </div>    
+                <div class="image">
+                    <img src="url(../images/coffe-3.png)" alt="picture">
+                </div>
+            </div>
+        </article>
+    </script>
+
     <script src="js/app.js" type="module"></script>
 </body>
 

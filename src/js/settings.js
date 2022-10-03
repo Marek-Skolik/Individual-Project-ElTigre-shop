@@ -1,9 +1,9 @@
 export const select = {
   templateOf: {
-    menuProduct: '#template-menu-product',
+    menuProduct: '#template-products',
   },
   containerOf: {
-    menu: '#products',
+    menu: '#product-list',
     pages: '#pages',
   },
   nav: {
@@ -20,13 +20,15 @@ export const settings = {
     roasting: '.roasting',
     intensity: '.intensity',
     image: '.image',
-  }
+  },
 };
 
 export const classNames = {
-
+  pages: {
+    active: 'active',
+  },
 };
 
 export const templates = {
- 
+  product: Handlebars.compile(document.querySelector(select.templateOf.productList).innerHTML),
 };

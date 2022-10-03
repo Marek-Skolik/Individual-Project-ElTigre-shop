@@ -1,4 +1,5 @@
 import { settings, } from '../settings.js';
+
 const app = {
   initData: function() {
     const url = settings.db.url + '/' + settings.db.products;
@@ -11,6 +12,7 @@ const app = {
         this.data.products = parsedResponse;
       });
   },
+
 
   init: function() {
     const thisApp = this;

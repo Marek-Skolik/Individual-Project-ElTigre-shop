@@ -4,7 +4,7 @@
             "id": "product-1",
             "name": "LA LAGARTIJA",
             "description": "Mysterious and treacherous... The best choice for the start of your journey! It will provide you a rich delicious flavor.",
-            "image": "url(../images/coffe-1.png)",
+            "image": "url(../images/coffe-1.png)", 
             "roasting": "5/10",
             "intensity": "6/10"
         },
