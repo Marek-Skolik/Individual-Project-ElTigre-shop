@@ -1,4 +1,4 @@
-import { settings } from './settings.js';
+import {select, settings } from './settings.js';
 import Product from './components/Products.js';
 
 const app = {
@@ -16,7 +16,7 @@ const app = {
     const thisApp = this;
 
     thisApp.widgetContainer = document.querySelector(select.containerOf.pages);
-    thisApp.pages = new Home(thisApp.widgetContainer);
+    thisApp.pages = new Product(thisApp.widgetContainer);
   },
 
   initData: function () {
