@@ -18,10 +18,10 @@ class Product {
     const elementTwo = utils.createDOMFromHTML(generatedHTML);
    
     const menuContainerHomePage = document.querySelector(select.containerOf.menu);
-    const menuContainerProductsPage = document.querySelector(select.containerOf.menu);
+    
 
     menuContainerHomePage.appendChild(elementOne);
-    menuContainerProductsPage.appendChild(elementTwo);
+    
   }
 }
 console.log(Product);
