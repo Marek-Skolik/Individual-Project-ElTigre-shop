@@ -7,6 +7,7 @@ class Product {
 
     thisProduct.id = id;
     thisProduct.data = data;
+    thisProduct.renderInMenu();
   }
 
   renderInMenu(){

@@ -34,23 +34,18 @@
 }
 
 .navigation{
-  word-spacing: 10px;
-
-  ul {
+  padding-top: 50px;
+    a {
+    word-spacing: 10px;
     padding-top: 50px;
-  } 
-
-  li {
     display: inline;
     font-size: 12px;
     letter-spacing: 1px;
-
-    a {
-      text-decoration: none;
-      font-family: $font-one;
-      color: $color-two;
+    text-decoration: none;
+    font-family: $font-one;
+    color: $color-two;
+    padding-right: 10px;
     }
-  }
 }
 
 .title {
@@ -94,7 +89,7 @@
 
 .icon-arrow-down {
   position: absolute;
-  text-align: center;
+  align-items: center;
   font-size: 25px;
   top: 90%;
   left: 49%;

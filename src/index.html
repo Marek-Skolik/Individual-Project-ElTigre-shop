@@ -8,7 +8,9 @@
     <link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;0,900;1,600&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;0,900;1,600&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -21,11 +23,9 @@
                     <h5>VENEZUELA COFFE BEANS</h5>
                 </div>
                 <nav class="navigation">
-                    <ul>
-                        <li><a href="#home">HOME</a></li>
-                        <li><a href="#products">PRODUCTS</a></li>
-                        <li><a href="#contact">CONTACT</a></li>
-                    </ul>
+                    <a href="#home">HOME</a>
+                    <a href="#products">PRODUCTS</a>
+                    <a href="#contact">CONTACT</a>
                 </nav>
             </div>
             <div class="title">
@@ -33,7 +33,7 @@
                 <h1 class="right">ORIGINAL TASTES</h1>
                 <h2>_____</h2>
             </div>
-            <a href="#" class="btn btn-one">DISCOVER</a>
+            <a href="#products" class="btn btn-one">DISCOVER</a>
             <i class="icon-arrow-down"></i>
         </div>
     </header>
@@ -42,8 +42,13 @@
             <div class="home-wrapper container"></div>
         </section>
         <section id="products">
-            <div id="product-list" class="product-list container"></div>
-        </section>
+            <div class="products-title">
+              <h2>PRODUCTS</h2>
+            </div>
+            <div class="products-wrapper">
+              <div id="product-list" class="product-list container"></div>
+            </div>
+          </section>
         <section id="contact">
             <div class="contact-wrapper container"></div>
         </section>
@@ -51,45 +56,39 @@
 
     <script id="template-product" type="text/x-handlebars-template">
         <article class='product'>
-            <div class="section-title">
-                <h1>PRODUCTS</h1>
-            </div>
-            <div id="product-1" class="container-1">
+            <div id="product" class="container">
                 <h3>{{name}}</h3>
                 <div class="description">
                     <p>{{description}}</p>
                 </div>
                 <div class='characteristic'>
-                    <p class='roasting'>Roasting: <span>{{roasting}}</span></p>
-                    <p class='intensity'>Intensity: <span>{{intensity}}</span></p>
+                    <p class='roasting'>ROASTING: <span>{{roasting}}</span></p>
+                    <p class='intensity'>INTENSITY: <span>{{intensity}}</span></p>
                 </div>    
                 <div class="image">
-                    <img src="url(../images/.png)" alt="picture">
+                    <img src={{image}} alt="picture">
                 </div>
             </div>
         </article>    
     </script>
 
-    <script id="template-contact-widget" type="text/x-handlebars-template"></script>
-        <section id="#contact" class="contact">
-            <div class="container-contact">
-                <div class="title-contact">
-                    <h1>CONTACT US</h1>
-                </div>
-                <form action="http://localhost:3000/#home" method="get" id="form1">
-                    <p>NAME</p>
-                    <input type="text" name="username" size="35" maxlength="50">
-                    <p>TITLE</p>
-                    <input type="text" name="title" size="35" maxlength="50">
-                    <p>MESSAGE</p>
-                    <input type="text" name="message" size="35" maxlength="250">
-                    <p></p>
-                    <button type="submit" class="btn-submit">SUBMIT</button>
-                </form>
+    <section id="#contact" class="contact">
+        <div class="container-contact">
+            <div class="title-contact">
+                <h1>CONTACT US</h1>
             </div>
-        </section>
-    </script>
-
+            <form action="http://localhost:3000/#home" method="get" id="form1">
+                <p>NAME</p>
+                <input type="text" name="username" size="35" maxlength="50">
+                <p>TITLE</p>
+                <input type="text" name="title" size="35" maxlength="50">
+                <p>MESSAGE</p>
+                <input type="text" name="message" size="35" maxlength="250">
+                <p></p>
+                <button type="submit" class="btn-submit">SUBMIT</button>
+            </form>
+        </div>
+    </section>
     <section class="about">
         <div class="about-us">
             <div class="container">
