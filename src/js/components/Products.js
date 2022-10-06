@@ -15,7 +15,7 @@ class Product {
     const generatedHTML = templates.menuProduct(thisProduct.data);
     
     const elementOne = utils.createDOMFromHTML(generatedHTML);
-    const elementTwo = utils.createDOMFromHTML(generatedHTML);
+    
    
     const menuContainerHomePage = document.querySelector(select.containerOf.menu);
     

@@ -7,14 +7,18 @@
 }
 
 .title-contact {
+  border-bottom: 5px solid $color-one;
+  width: 600px;
+  position: relative;
+  left: 30%;
+  margin-bottom: 5%;
   h1{
     color: $color-one;
     font-family: $font-four;
     font-weight: 600;
     font-size: 50px;
     letter-spacing: 10px;
-    padding-bottom: 20px;
-    border-bottom: 5px solid $color-one;
+    padding-bottom: 10px;
   }
 }
 
