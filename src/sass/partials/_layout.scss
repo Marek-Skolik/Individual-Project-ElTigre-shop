@@ -152,3 +152,80 @@ footer {
     font-size: 10px;
   }
 }
+
+  @media (max-width: 767px) and (max-width: 991px){
+    /* HOME */
+.logo{
+  letter-spacing: 2px;
+  line-height: 2px;
+  }
+
+.logo h3 {
+  font-size: 10px;
+  }
+
+.logo h5 {
+  font-size: 5px;
+}
+  
+.navigation{
+  padding-top: 50px;
+  a {
+    word-spacing: 5px;
+    padding-top: 25px;
+    font-size: 6px;
+    padding-right: 5px;
+  }
+}
+  
+.title {
+  line-height: 10px;
+  h1 {
+    font-size: 25px;
+    letter-spacing: 4px;
+  }
+  
+  h1.right {
+    padding-left:50px;
+  }
+  
+  h2 {
+    font-size: 25px;
+  }
+}
+  
+.btn-one{
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+  
+.icon-arrow-down {
+  font-size: 12px;
+}
+  
+/* ABOUT */
+  
+.about-us .container {
+  
+  h1{
+    font-size: 25px;
+    letter-spacing: 5px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid $color-one;
+  }
+  
+  p {
+    padding: 7px;
+    font-size: 10px;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+  }
+}
+  
+footer {
+  
+  p {
+    font-size: 5px;
+    }
+  }
+}
