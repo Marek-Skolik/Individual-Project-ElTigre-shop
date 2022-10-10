@@ -15,10 +15,11 @@ h1 {
 
 .wrapper .box {
   display: flex;
-  width: 50%;
+  width: 55%;
   margin: 0 auto;
   justify-content: center;
   padding: 20px;
+  flex-direction: row;
 
   h3 {
     font-family: $font-four;
@@ -55,8 +56,13 @@ h1 {
   }
 }
 
-.wrapper .box:nth-of-child(2n) {
+.wrapper:nth-child(1n) .box{
+  padding-top: 40px;
+}
+
+.wrapper:nth-child(2n) .box {
   flex-direction: row-reverse;
+  margin-left: 17%;
 }
 
 .image img {
@@ -64,6 +70,10 @@ h1 {
   height: 310px;
   box-shadow: 0 0 10px 5px grey;
   margin-left: 30px;
+}
+
+.image:nth-child(2n) img{
+  margin-right: 40px;
 }
 
 .description {

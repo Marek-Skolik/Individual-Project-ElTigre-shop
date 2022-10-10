@@ -37,79 +37,80 @@
             <i class="icon-arrow-down"></i>
         </div>
     </header>
+
     <div id="pages">
         <section id="home">
-            <div class="home-wrapper container"></div>
+          <div class="products-title">
+            <h1>PRODUCTS</h1>
+          </div>
+          <div class="products-wrapper">
+            <div id="product-list-home" class="product-list container"></div>
+          </div>
+          <section class="about">
+            <div class="about-us">
+                <div class="container">
+                    <h1>ABOUT US</h1>
+                    <p><i>Who are we? Just a bunch of friends with<br>
+                            a love for a good coffe and desire to create<br> something new, something original.</i></p>
+                    <p><i>Our coffees reflect us - young, wild and free.<br>We are on the journey of new tastes...</i></p>
+                    <p class="join"><i>Join us!</i></p>
+                </div>
+            </div>
+          </section>
         </section>
         <section id="products">
             <div class="products-title">
                 <h1>PRODUCTS</h1>
             </div>
             <div class="products-wrapper">
-                <div id="product-list" class="product-list container"></div>
+                <div id="product-list-products" class="product-list container"></div>
             </div>
         </section>
         <section id="contact">
-            <div class="contact-wrapper container"></div>
+            <div class="contact-wrapper container">
+              <section class="contact">
+                <div class="container-contact">
+                    <div class="title-contact">
+                        <h1>CONTACT US</h1>
+                    </div>
+                    <form action="http://localhost:3000/#home" method="get" id="form1">
+                        <p>NAME</p>
+                        <input type="text" name="username" size="35" maxlength="50">
+                        <p>TITLE</p>
+                        <input type="text" name="title" size="35" maxlength="50">
+                        <p>MESSAGE</p>
+                        <input type="text" name="message" size="35" maxlength="250">
+                        <p></p>
+                        <button type="submit" class="btn-submit">SUBMIT</button>
+                    </form>
+                </div>
+              </section>
+            </div>
         </section>
     </div>
 
-    <script id="template-product" type="text/x-handlebars-template">
-        <article class='wrapper'>
-            <div class="box">
-                <div class="text">
-                    <h3>{{name}}</h3>
-                    <h3 class="underline">____</h3>
-                    <p class="description">{{description}}</p>
-                    <p class='roasting'>ROASTING: <span>{{roasting}}</span></p>
-                    <p class='intensity'>INTENSITY: <span>{{intensity}}</span></p> 
-                </div>    
-                <div class="image">
-                    <img src={{image}} alt="picture">
-                </div>
-            </div>
-        </article> 
-    </script>
-    <footer>
-        <p>© 2021 EL TIGRE inc.</p>
-    </footer>
-    <section id="#contact" class="contact">
-        <div class="container-contact">
-            <div class="title-contact">
-                <h1>CONTACT US</h1>
-            </div>
-            <form action="http://localhost:3000/#home" method="get" id="form1">
-                <p>NAME</p>
-                <input type="text" name="username" size="35" maxlength="50">
-                <p>TITLE</p>
-                <input type="text" name="title" size="35" maxlength="50">
-                <p>MESSAGE</p>
-                <input type="text" name="message" size="35" maxlength="250">
-                <p></p>
-                <button type="submit" class="btn-submit">SUBMIT</button>
-            </form>
-        </div>
-    </section>
-    <footer>
-        <p>© 2021 EL TIGRE inc.</p>
-    </footer>
-    <section class="about">
-        <div class="about-us">
-            <div class="container">
-                <h1>ABOUT US</h1>
-                <p><i>Who are we? Just a bunch of friends with<br>
-                        a love for a good coffe and desire to create<br> something new, something original.</i></p>
-                <p><i>Our coffees reflect us - young, wild and free.<br>We are on the journey of new tastes...</i></p>
-                <p class="join"><i>Join us!</i></p>
-            </div>
-        </div>
-    </section>
     <footer>
         <p>© 2021 EL TIGRE inc.</p>
     </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js"></script>
-    <script src="js/app.js" type="module"></script>
+  <script id="template-product" type="text/x-handlebars-template">
+      <article class='wrapper'>
+          <div class="box">
+              <div class="text">
+                  <h3>{{name}}</h3>
+                  <h3 class="underline">____</h3>
+                  <p class="description">{{description}}</p>
+                  <p class='roasting'>ROASTING: <span>{{roasting}}</span></p>
+                  <p class='intensity'>INTENSITY: <span>{{intensity}}</span></p> 
+              </div>    
+              <div class="image">
+                  <img src={{image}} alt="picture">
+              </div>
+          </div>
+      </article> 
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js"></script>
+  <script src="js/app.js" type="module"></script>
 </body>
 
 </html>

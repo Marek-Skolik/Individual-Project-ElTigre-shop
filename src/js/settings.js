@@ -4,7 +4,8 @@ export const select = {
     product: '#product',
   },
   containerOf: {
-    menu: '#product-list',
+    menuProducts: '#product-list-products',
+    homeProducts: '#product-list-home',
     pages: '#pages',
   },
   nav: {
@@ -28,6 +29,9 @@ export const classNames = {
   pages: {
     active: 'active',
   },
+  nav: {
+    active: 'active',
+  }
 };
 
 export const templates = {

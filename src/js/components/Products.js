@@ -15,13 +15,13 @@ class Product {
     const generatedHTML = templates.menuProduct(thisProduct.data);
     
     const elementOne = utils.createDOMFromHTML(generatedHTML);
-    
-   
-    const menuContainerHomePage = document.querySelector(select.containerOf.menu);
-    
+    const elementTwo = utils.createDOMFromHTML(generatedHTML);
 
-    menuContainerHomePage.appendChild(elementOne);
+    const menuContainerProductsPage = document.querySelector(select.containerOf.menuProducts);
+    const menuContainerHomePage = document.querySelector(select.containerOf.homeProducts);
     
+    menuContainerProductsPage.appendChild(elementOne);
+    menuContainerHomePage.appendChild(elementTwo);
   }
 }
 console.log(Product);
