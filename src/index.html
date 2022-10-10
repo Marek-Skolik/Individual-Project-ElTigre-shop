@@ -55,24 +55,24 @@
     </div>
 
     <script id="template-product" type="text/x-handlebars-template">
-        <article class='product'>
-            <div class="container">
-                <h3>{{name}}</h3>
-                <h3 class="underline">__</h3>
-                <div class="description">
-                    <p>{{description}}</p>
-                </div>
-                <div class='characteristic'>
+        <article class='wrapper'>
+            <div class="box">
+                <div class="text">
+                    <h3>{{name}}</h3>
+                    <h3 class="underline">____</h3>
+                    <p class="description">{{description}}</p>
                     <p class='roasting'>ROASTING: <span>{{roasting}}</span></p>
-                    <p class='intensity'>INTENSITY: <span>{{intensity}}</span></p>
+                    <p class='intensity'>INTENSITY: <span>{{intensity}}</span></p> 
                 </div>    
                 <div class="image">
                     <img src={{image}} alt="picture">
                 </div>
             </div>
-        </article>    
+        </article> 
     </script>
-
+    <footer>
+        <p>© 2021 EL TIGRE inc.</p>
+    </footer>
     <section id="#contact" class="contact">
         <div class="container-contact">
             <div class="title-contact">
@@ -90,6 +90,9 @@
             </form>
         </div>
     </section>
+    <footer>
+        <p>© 2021 EL TIGRE inc.</p>
+    </footer>
     <section class="about">
         <div class="about-us">
             <div class="container">
