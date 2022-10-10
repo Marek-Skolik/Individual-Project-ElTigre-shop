@@ -110,13 +110,14 @@
   text-align: center;
   background-repeat: no-repeat;
   background-size: cover;
-  display: flex;
 }
 
 .about-us .container {
-  position: absolute;
-  left: 34%;
-  margin-top: 5%;
+  width: 600px;
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 5%;
+  
 
   h1{
     color: $color-one;
@@ -124,10 +125,10 @@
     font-weight: 600;
     font-size: 50px;
     letter-spacing: 10px;
-    padding-bottom: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
     border-bottom: 5px solid $color-one;
   }
-
   p {
     text-align: left;
     color: $color-two;
