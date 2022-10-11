@@ -1,6 +1,6 @@
 @import 'variables';
 
-@media (max-width: 400px) and (max-width: 991px){
+@media (max-width: 767px) and (max-width: 991px){
   .splash {
     width: 100%;
     height: 100vh;
@@ -82,14 +82,30 @@
   /* ABOUT */
 
   .about-us .container {
-    width: 400px;
-    position: relative;
-    margin: 0 auto;
-    margin-bottom: 5%;
-  }
-
+    width: 200px;
+    margin-bottom: 2%;
+    h1{
+      font-size: 16px;
+      letter-spacing: 4px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      border-bottom: 3px solid $color-one;
+    }
+    p {
+      text-align: center;
+      padding: 8px;
+      font-size: 10px;
+    }
 
   /* PRODUCTS */
+  .products-title {
+    letter-spacing: 4px;
+    border-bottom: 3px solid $color-one;
+    width: 200px;
+    h1 {
+      font-size: 16px;
+      }
+  }
 
   .wrapper .box {
     width: 200px;
@@ -103,6 +119,13 @@
     flex-direction: column;
     margin-left: 4%;
   }
+
+  .image img {
+    width: 250px;
+    height: 160px;
+    box-shadow: 0 0 5px 2px grey;
+    margin-left: 2px;
+  }
   
   /* CONTACT */
   
@@ -113,6 +136,20 @@
   }
   
   .title-contact {
+    border-bottom: 3px solid $color-one;
     width: 200px;
+    margin-bottom: 2%;
+    h1{
+      font-weight: 600;
+      font-size: 16px;
+      letter-spacing: 4px;
+      padding-bottom: 5px;
+    }
   }
+
+  form p {
+    font-size: 10px;
+    font-weight: 700;
+  }
+}
 }
