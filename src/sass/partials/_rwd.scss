@@ -84,6 +84,7 @@
   .about-us .container {
     width: 200px;
     margin-bottom: 2%;
+
     h1{
       font-size: 20px;
       letter-spacing: 4px;
@@ -91,6 +92,7 @@
       padding-bottom: 20px;
       border-bottom: 3px solid $color-one;
     }
+
     p {
       text-align: center;
       padding: 8px;
@@ -103,9 +105,10 @@
     letter-spacing: 4px;
     border-bottom: 3px solid $color-one;
     width: 200px;
+
     h1 {
       font-size: 20px;
-      }
+    }
   }
 
   .wrapper .box {
@@ -141,6 +144,7 @@
     border-bottom: 3px solid $color-one;
     width: 200px;
     margin-bottom: 2%;
+
     h1{
       font-weight: 600;
       font-size: 16px;
