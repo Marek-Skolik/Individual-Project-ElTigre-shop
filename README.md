@@ -1,2 +1,1 @@
-
-https://individual-project-eltigre-shop.marek26.repl.co/
+https://Individual-Project-ElTigre-shop.marek26.repl.co
